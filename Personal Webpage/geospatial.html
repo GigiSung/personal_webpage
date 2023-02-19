@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geospatial</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Address Sans Pro', sans-serif;
+            font-weight: 150;
+            letter-spacing: 2px;
+        }
+        a {
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            background-color: white;
+            display: inline-block;
+            padding: 3px;
+            margin-right: 35px;
+            white-space: nowrap;
+            font-size: 20px;
+            border: 1px solid black;
+            flex-shrink: 0;
+        }
+        .section {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        pre {
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+    </style>
+  
+</head>
+<body>
+    <a href="index.html">Home</a>
+
+
+
+    <div class="section">
+        <h1>Google Map Crawler</h1>
+        <meta name="keywords" content="google, google map, map, crawl, crawler, crawling">
+        <p>Hello folks! I made a google map crawling bot to list up all the restaurants in NYC. 
+            Happy to share it with you. 
+            I want to contribute to making your lives easier.</p>
+            <p>This exmaple code crawls Google Maps for a list of restaurants in Staten Island, New York
+            , and saves the results to a CSV file. </p>
+           <p>You will have names and addresses of restaurants. 
+            You can always substitue "restaurant" with any type of place or business that you wanna scrape. </p>
+
+            <p>The flow is like this:</p>
+        <ul>
+            <li>First, it defines a list of locations to search for.</li>
+            <li>Then, it creates a CSV file to save the results to.</li>
+            <li>Next, it loops through each location in the list and uses Selenium to search for it on Google Maps.</li>
+            <li>Once the search results are loaded, it loops through each page of results and extracts the name and address of each restaurant.</li>
+            <li>Finally, it writes the results to the CSV file and moves on to the next location.</li>
+          </ul>
+
+        <h2>Here's the code:</h2>
+        <p>1. Import necessary modules:</p>
+        
+        <pre>
+            <code>
+                from selenium import webdriver
+                import time
+                import csv
+                from selenium.webdriver.common.keys import Keys
+                from selenium.webdriver.common.by import By
+            </code>
+          </pre>
+    </div>
+   
+
+
+</body>
+</html>
